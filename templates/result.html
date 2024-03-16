@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>
+    <h3>Symptoms selected are : </h3>
+    <ul>
+        {% for symptom in symptoms.split(',') %}
+            <li>{{ symptom[14::] }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Predictions of 3 models : </h3>
+        Random Forest Prediction: {{ rf_prediction }} 
+        <br>SVM Prediction: {{ svm_prediction }} 
+        <br>Naive Bayes Prediction: {{ nb_prediction }}</p>
+
+        <h2>Overview of the Disease</h2>
+        <p> {{ p1 }} <p> 
+        <h2>Causes and Effects</h2>
+        <p> {{ p2}} <p> 
+        <h2>Impact on Different Age Groups</h2>
+        <p> {{ p3}} <p> 
+        <h2>Controlling the Disease: Home Remedies and Lifestyle Changes</h2>
+        <p> {{ p4 }} <p> 
+        <h2>Specialized Doctors for the Disease and Severity Levels</h2>
+        <p> {{ p5}} <p> 
+        <h2>Diagnosing the Disease: Methods and Procedures</h2>
+        <p> {{ p6}} <p> 
+        <h2>Available Treatment Options</h2>
+        <p> {{ p7 }} <p> 
+        <h2>Specific Risk Factors Associated with the Disease</h2>
+        <p> {{ p8}} <p> 
+    
+
+</body>
+</html>
