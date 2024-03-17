@@ -8,7 +8,7 @@ from array import array
 import importlib
 import openai
 
-openai.api_key = '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' 
+openai.api_key = 'insert your OpenAI api key' 
 
 currentdirectory=os.path.dirname(os.path.abspath(__file__))
 
